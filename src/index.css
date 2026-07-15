@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Times New Roman", Times, serif;
+  --font-amiri: "Amiri", serif;
+  --color-brand-bg: #330202;
+  --color-brand-card: #4A0404;
+  --color-brand-ice: #96B6C5;
+  --color-brand-rose: #F5D6D6;
+}
+
+/* Ensure the premium serif styles are active on body, headers, and text */
+body {
+  background-color: #330202;
+  color: #96B6C5;
+  font-family: "Times New Roman", Times, serif;
+}
+
+[dir="rtl"] {
+  font-family: "Amiri", "Times New Roman", serif;
+}
+
+/* Smooth scrolling for anchor viewport transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar to keep layout clean and premium */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #330202;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #96B6C5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F5D6D6;
+}
